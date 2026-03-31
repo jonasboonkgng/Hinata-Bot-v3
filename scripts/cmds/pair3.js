@@ -85,7 +85,7 @@ module.exports = {
                         const selectedMatch = matchCandidates[Math.floor(Math.random() * matchCandidates.length)];
                         const apiUrl = await baseApiUrl();
                         
-                        const { data } = await axios.get(`${apiUrl}/api/pair/mahmud?user1=${event.senderID}&user2=${selectedMatch.id}&style=2`, { 
+                        const { data } = await axios.get(`${apiUrl}/api/pair/mahmud?user1=${event.senderID}&user2=${selectedMatch.id}&style=3`, { 
                                 responseType: "arraybuffer" 
                         });
 
